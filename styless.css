@@ -1,0 +1,359 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+.header__logo {
+  width: 30rem;
+}
+.header__navegacion ul {
+  display: flex;
+  gap: 2rem;
+}
+.header__item {
+  list-style: none;
+}
+.header__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+.header__link--active {
+  background-color: #e8505b;
+  padding: 1.1rem 2.9rem;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+.buscar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.buscar__informacion {
+  background-color: #e8505b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+.buscar__titulo {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.buscar__formulario {
+  margin-top: 8rem;
+  width: 70%;
+}
+.buscar__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.buscar__item label {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.buscar__item input {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.buscar__boton {
+  margin-top: 2rem;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  background-color: #455a64;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.secuencia {
+  margin-top: 6rem;
+}
+.secuencia__linear {
+  margin-bottom: -0.3em;
+}
+.secuencia__contenido {
+  background-color: #e8505b;
+}
+.secuencia__titulo {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.2rem;
+}
+.secuencia__subtitulo {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.secuencia__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.secuencia__tarjeta img {
+  width: 100%;
+}
+
+.testimonios {
+  margin-top: 6rem;
+}
+.testimonios__titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.testimonios__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.testimonios__tarjeta {
+  background-color: #455a64;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.testimonios__descripcion {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+.testimonios__calificacion {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.testimonios__autor {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.testimonios__face {
+  width: 10rem;
+  border-radius: 50%;
+}
+.testimonios__estrellas {
+  width: 100%;
+}
+.testimonios__tarjeta:nth-child(1) {
+  grid-column: 1/4;
+}
+.testimonios__tarjeta:nth-child(2) {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+.testimonios__tarjeta:nth-child(3) {
+  grid-row: 2/3;
+  grid-column: 3/5;
+}
+.testimonios__tarjeta:nth-child(4) {
+  grid-column: 5/6;
+  grid-row: 1/3;
+}
+.testimonios__tarjeta:nth-child(5) {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+.replica {
+  margin-top: 6rem;
+  height: 400px;
+  background-color: aqua;
+}
+.replica__cards {
+  padding: 1rem;
+  background-color: #455a64;
+  display: grid;
+  height: 400px;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.replica__cards article {
+  background-color: white;
+}
+.replica__cards article:nth-child(1) {
+  grid-column: 1/4;
+}
+.replica__cards article:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.replica__cards article:nth-child(3) {
+  grid-row: 1/3;
+  grid-column: 5/6;
+}
+.replica__cards article:nth-child(4) {
+  grid-column: 1/3;
+}
+.replica__cards article:nth-child(5) {
+  grid-column: 3/5;
+}
+
+.restaurantes {
+  margin-top: 6rem;
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+.restaurantes__titulo {
+  text-align: center;
+  font-size: 3rem;
+  color: #455a64;
+}
+.restaurantes__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.restaurantes__tarjeta {
+  background-color: #ffffff;
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2.6rem -0.8rem #99a4a9;
+}
+.restaurantes__imagen {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.restaurantes__imagen img {
+  width: 10rem;
+}
+.restaurantes__informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.restaurantes__informacion img {
+  width: 13rem;
+}
+.restaurantes__nombre {
+  font-size: 2rem;
+  color: #e8505b;
+}
+.restaurantes__descripcion {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #455a64;
+  line-height: 2rem;
+}
+
+.ganancia {
+  margin-top: 6rem;
+}
+.ganancia__titulo {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #455a64;
+  margin-bottom: 3rem;
+}
+.ganancia__contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.ganancia__imagen {
+  width: 100%;
+}
+.ganancia__informacion {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.ganancia__informacion p {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: #455a64;
+  line-height: 3rem;
+}
+.ganancia__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #e8505b;
+  padding: 1.1rem 2.9rem;
+  color: #ffffff;
+  border-radius: 1rem;
+  text-align: center;
+  width: 40%;
+}
+
+.footer {
+  margin-top: 6rem;
+  background-color: #455a64;
+  color: #ffffff;
+}
+.footer__contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.footer__informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__informacion h2 {
+  font-size: 3rem;
+}
+.footer__informacion p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.footer__informacion nav {
+  height: 100%;
+}
+.footer__informacion ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.footer__informacion li {
+  list-style: none;
+}
+.footer__informacion a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.footer__reservados {
+  background-color: #e8505b;
+  text-align: center;
+  padding: 2rem 0;
+  align-items: center;
+  font-size: 2rem;
+}/*# sourceMappingURL=styless.css.map */

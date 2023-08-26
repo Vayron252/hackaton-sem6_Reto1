@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>App Delivery</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styless.css">
+	</head>
+	<body>
+		<header class="header contenedor">
+			<img class="header__logo" src="./img/logo.svg" alt="imagen-logo">
+			<nav class="header__navegacion">
+				<ul>
+					<li class="header__item"><a class="header__link" href="#">Iniciar Sesión</a></li>
+					<li class="header__item"><a class="header__link" href="#">Crear Cuenta</a></li>
+					<li class="header__item"><a class="header__link header__link--active" href="#">Registrar Restaurant</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="buscar contenedor">
+				<div class="buscar__informacion">
+					<h2 class="buscar__titulo">Encuentra y Pide comida de tu restaurante favorito</h2>
+					<form class="buscar__formulario">
+						<div class="buscar__item">
+							<label>RESTAURANT</label>
+							<input type="text" placeholder="Tacos México">
+						</div>
+						<div class="buscar__item">
+							<label>PLATILLO</label>
+							<input type="text" placeholder="Pizza, Ensalada, Hamburguesa">
+						</div>
+						<button class="buscar__boton">Buscar</button>
+					</form>
+				</div>
+				<div class="buscar__repartidor">
+					<img src="./img/dibujo_repartidor.svg" alt="imagen-repartidor">
+				</div>
+			</section>
+			<section class="secuencia">
+				<img class="secuencia__linear" src="./img/wave.svg" alt="imagen-linear">
+				<div class="secuencia__contenido">
+					<h2 class="secuencia__titulo">¿Cómo funciona?</h2>
+					<p class="secuencia__subtitulo">tan fácil como 1,2 y 3</p>
+					<div class="secuencia__cards contenedor">
+						<article class="secuencia__tarjeta">
+							<img src="./img/paso_1.png" alt="img-paso1">
+						</article>
+						<article class="secuencia__tarjeta">
+							<img src="./img/paso_2.png" alt="img-paso2">
+						</article>
+						<article class="secuencia__tarjeta">
+							<img src="./img/paso_3.png" alt="img-paso3">
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="testimonios contenedor">
+				<h2 class="testimonios__titulo">Testimoniales</h2>
+				<div class="testimonios__cards">
+					<article class="testimonios__tarjeta">
+						<div class="testimonios__calificacion">
+							<img class="testimonios__face" src="./img/testimonial1.jpg" alt="testimonial-1">
+							<div class="testimonios__nombre">
+								<p class="testimonios__autor">Juan Perez</p>
+								<img class="testimonios__estrellas" src="./img/estrellas.png" alt="imagen-estrellas">
+							</div>
+						</div>
+						<p  class="testimonios__descripcion">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+					</article>
+					<article class="testimonios__tarjeta">
+						<div class="testimonios__calificacion">
+							<img class="testimonios__face" src="./img/testimonial2.jpg" alt="testimonial-1">
+							<div class="testimonios__nombre">
+								<p class="testimonios__autor">Cynthia V</p>
+								<img class="testimonios__estrellas" src="./img/estrellas.png" alt="imagen-estrellas">
+							</div>
+						</div>
+						<p  class="testimonios__descripcion">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+					</article>
+					<article class="testimonios__tarjeta">
+						<div class="testimonios__calificacion">
+							<img class="testimonios__face" src="./img/testimonial3.jpg" alt="testimonial-1">
+							<div class="testimonios__nombre">
+								<p class="testimonios__autor">Jose Hernandez</p>
+								<img class="testimonios__estrellas" src="./img/estrellas.png" alt="imagen-estrellas">
+							</div>
+						</div>
+						<p  class="testimonios__descripcion">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+					</article>
+					<article class="testimonios__tarjeta">
+						<div class="testimonios__calificacion">
+							<img class="testimonios__face" src="./img/testimonial4.jpg" alt="testimonial-1">
+							<div class="testimonios__nombre">
+								<p class="testimonios__autor">Rocio Rodriguez</p>
+								<img class="testimonios__estrellas" src="./img/estrellas.png" alt="imagen-estrellas">
+							</div>
+						</div>
+						<p  class="testimonios__descripcion">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+					</article>
+					<article class="testimonios__tarjeta">
+						<div class="testimonios__calificacion">
+							<img class="testimonios__face" src="./img/testimonial5.jpg" alt="testimonial-1">
+							<div class="testimonios__nombre">
+								<p class="testimonios__autor">Itzel Cruz</p>
+								<img class="testimonios__estrellas" src="./img/estrellas.png" alt="imagen-estrellas">
+							</div>
+						</div>
+						<p  class="testimonios__descripcion">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- <section class="replica">
+				<div class="replica__cards contenedor">
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore atque iusto et, dignissimos dolorem, accusantium at ea omnis debitis placeat numquam unde autem voluptatum cum quos eveniet delectus ipsum!</p>
+					</article>
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore atque iusto et, dignissimos dolorem, accusantium at ea omnis debitis placeat numquam unde autem voluptatum cum quos eveniet delectus ipsum!</p>
+					</article>
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore atque iusto et, dignissimos dolorem, accusantium at ea omnis debitis placeat numquam unde autem voluptatum cum quos eveniet delectus ipsum!</p>
+					</article>
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore atque iusto et, dignissimos dolorem, accusantium at ea omnis debitis placeat numquam unde autem voluptatum cum quos eveniet delectus ipsum!</p>
+					</article>
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore atque iusto et, dignissimos dolorem, accusantium at ea omnis debitis placeat numquam unde autem voluptatum cum quos eveniet delectus ipsum!</p>
+					</article>
+				</div>
+			</section> -->
+
+			<section class="restaurantes">
+				<h2 class="restaurantes__titulo">Restaurantes Favoritos</h2>
+				<div class="restaurantes__cards contenedor">
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+					<article class="restaurantes__tarjeta">
+						<div class="restaurantes__imagen">
+							<img src="./img/logo_ensaladas.png" alt="img-ensalada">
+						</div>
+						<div class="restaurantes__informacion">
+							<img src="./img/estrellas.png" alt="imagen-estrellas">
+							<h2 class="restaurantes__nombre">Green Ensaladas</h2>
+							<p class="restaurantes__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="ganancia contenedor">
+				<h2 class="ganancia__titulo">Gana dinero con AppComida</h2>
+				<div class="ganancia__contenido">
+					<img class="ganancia__imagen" src="./img/repartidor.jpg" alt="img-mochila">
+					<div class="ganancia__informacion">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam quo provident, minus ipsum exercitationem commodi, laboriosam reiciendis illo quos quae. Esse architecto delectus quibusdam nesciunt earum molestias necessitatibus commodi.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iste quae dolorum saepe itaque totam, voluptates harum dignissimos temporibus, sit voluptatibus, placeat eveniet. Tempore animi, eum excepturi repudiandae nulla unde.</p>
+						<a class="ganancia__link" href="#">Más información</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__contenido contenedor">
+				<div class="footer__informacion">
+					<h2>Nosotros</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos eveniet hic ducimus ut id ipsam sed, consectetur numquam, repudiandae praesentium quaerat consequuntur culpa ipsa velit nisi aperiam quod? Odit!</p>
+				</div>
+				<div class="footer__informacion">
+					<h2>Navegación</h2>
+					<nav>
+						<ul>
+							<li><a href="">Enlace 1</a></li>
+							<li><a href="">Enlace 2</a></li>
+							<li><a href="">Enlace 3</a></li>
+							<li><a href="">Enlace 4</a></li>
+							<li><a href="">Enlace 5</a></li>
+							<li><a href="">Enlace 6</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__informacion">
+					<h2>Contacto</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos eveniet hic ducimus ut id ipsam sed, consectetur numquam, repudiandae praesentium quaerat consequuntur culpa ipsa velit nisi aperiam quod? Odit!</p>
+				</div>
+			</div>
+			<p class="footer__reservados">App Comida. Todos los derechos Reservados</p>
+		</footer>
+	</body>
+</html>
